@@ -1,5 +1,8 @@
 import Head from "next/head";
 import { BsFillMoonStarsFill } from "react-icons/bs";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import Image from "next/image";
+import itachi from "../public/itachi.png";
 
 export default function Home() {
   return (
@@ -13,7 +16,7 @@ export default function Home() {
       <main className="bg-white px-10">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 classname="text-xl">yqodsi</h1>
+            <h1 className="font-['Outfit'] text-4xl">Yqodsi</h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill className="cursor-pointer text-2xl" />
@@ -28,6 +31,42 @@ export default function Home() {
               </li>
             </ul>
           </nav>
+          <div className="text-center p-10">
+            <h1 className="text-5xl py-2 text-teal-600">Yahya Qodsi</h1>
+            <h3 className="text-2xl py-2">Web Developer.</h3>
+            <p className="text-md py-5 leading-8 text-gray-800">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Molestiae sed tenetur nam nulla velit tempore fuga dolorem
+              quibusdam odio ea?
+            </p>
+            <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
+              <AiFillGithub />
+              <AiFillLinkedin />
+            </div>
+            <div className="relative mx-auto overflow-hidden bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 m">
+              <Image src={itachi} layout="fill" objectFit="cover"></Image>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div>
+            <h3 className="text-3xl py-1">Services I offer</h3>
+            <p className="text-md py-5 leading-8 text-gray-800">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste modi
+              veritatis, pariatur temporibus praesentium recusandae quia
+              blanditiis sunt animi voluptatum.
+              <span className="text-teal-500">agencies</span>
+              <span className="text-teal-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+                accusamus!
+              </span>
+            </p>
+          </div>
+          <div>
+            <div>
+              {/* <Image src={itachi} layout="fill" objectFit="cover"></Image> */}
+            </div>
+          </div>
         </section>
       </main>
     </div>
